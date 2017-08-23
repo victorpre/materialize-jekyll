@@ -89,6 +89,10 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 
 When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
 
+## Credits
+
+This theme was inspired by the [Google's Material Design](https://material.io/guidelines/#introduction-goals), using the components and classes from [Materialize](https://github.com/Dogfalo/materialize) framework and it has a lot of influence from [Willian Justen's Card Jekyll Template ](https://github.com/willianjusten/cards-jekyll-template).
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
