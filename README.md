@@ -2,7 +2,7 @@
 
 ![Materialize meets Jekyll](http://res.cloudinary.com/victorpre/image/upload/v1503466230/Gem%20materialize-jekyll/materialize-jekyll.png)
 
-Welcome to your materialize-jekyll theme! In this repo, you'll find the files you need to use [Materializecss](http://materializecss.com/) in your [Jekyll page](https://jekyllrb.com/). Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+Welcome to your **materialize-jekyll** theme! This is where [Materialize](http://materializecss.com/) meets [Jekyll](https://jekyllrb.com/).
 
 ## Installation
 
@@ -27,8 +27,6 @@ Or install it yourself as:
     $ gem install materialize-jekyll
 
 ## Usage
-
-Open `_config.yml` file and edit it adding your personal information to it.
 
 ### Project tree:
 ```
@@ -67,15 +65,32 @@ materialize-jekyll
           └─── vendor
 ```
 
-This gem offers two main layouts that you can use/edit:
-- `_layouts/default` used in the `index.html` page (your blog homepage)
-- `_layouts/post` which is the blog post itself
+Inside the `_includes/` directory there are the partials that are used inside your layouts and pages.
+By default, the layouts render the following partials inside themselves:
 
-Inside the `_includes/` directory there are some partials that are/can be used inside your layouts and pages. By default the  `_includes/share.html`, `_includes/author.html`, `_includes/comments.html` are only being used inside the post layout, while the others are shared between both pages.
+- `_layouts/default.html`
+    - `_includes/header.html`, 
+    - `_includes/navbar.html`,
+    - `_includes/footer.html`
+- `_layouts/post.html`
+    - `_includes/header.html`, 
+    - `_includes/navbar.html`,
+    - `_includes/share.html`,
+    - `_includes/author.html`,
+    - `_includes/comments.html`
+    - `_includes/footer.html`
 
-The CSS of this gem can be edited both in `_sass/` and in `assets/css/main.scss`
 
-Your blog posts should be put in the `_posts` directory.
+This gem offers two *main* layouts that you can use/edit:
+- `_layouts/default.html`, which is used in the `index.html` page (your blog homepage),
+- `_layouts/post.html`, which is the layout in which the blog post itself will be rendered
+
+
+The stylesheets of this gem can be edited both in `_sass/` and in `assets/css/main.scss`.
+
+To edit the current JavaScript functions of the gem, the file you are looking for is in `assets/js/init.js`.
+
+Your blog posts (`*.md` files) should be put in the `_posts` directory.
 
 ## Contributing
 
@@ -91,7 +106,7 @@ When your theme is released, only the files in `_layouts`, `_includes`, and `_sa
 
 ## Credits
 
-This theme was inspired by the [Google's Material Design](https://material.io/guidelines/#introduction-goals), using the components and classes from [Materialize](https://github.com/Dogfalo/materialize) framework and it has a lot of influence from [Willian Justen's Card Jekyll Template ](https://github.com/willianjusten/cards-jekyll-template).
+This theme was inspired by the [Google's Material Design](https://material.io/guidelines/#introduction-goals), using the components from [Materialize](https://github.com/Dogfalo/materialize) framework and it has a lot of influence from [Willian Justen's Card Jekyll Template](https://github.com/willianjusten/cards-jekyll-template).
 
 ## License
 
