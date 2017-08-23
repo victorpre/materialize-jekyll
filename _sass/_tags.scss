@@ -1,0 +1,48 @@
+.tags-collection {
+  padding: 50px 25px 100px 25px;
+}
+
+.tagged-posts {
+  .tag-title {
+    font-weight: 200;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+  li {
+    transition: 0.4s ease;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #d7ccc8;
+    line-height: 50px;
+  }
+
+  li:hover{
+    border-bottom-color: #8d6e63;
+  }
+
+  .post-title {
+    font-size: 20px;
+    color: #d7ccc8;
+    font-weight: 300;
+    border-bottom: 5px;
+    .entry-date{
+      float: right;
+    }
+  }
+  .post-title:hover {
+    color: #8d6e63;
+  }
+}
+
+.chip {
+  color: #26a69a;
+  background: white;
+  border: #26a69a solid 1px;
+}
+
+.chip:hover {
+  background: #26a69a;
+  color: #fff;
+  border: #e4e4e4 solid 1px;
+}
+

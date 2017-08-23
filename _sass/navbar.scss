@@ -1,0 +1,19 @@
+.nav-wrapper {
+  z-index: 150;
+}
+
+.main-nav {
+  height: 64px;
+  z-index: 150;
+  margin-bottom: -64px;
+  position: fixed;
+  top: 0;
+}
+
+.brand-logo {
+  color: #444;
+  margin-left: 25px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

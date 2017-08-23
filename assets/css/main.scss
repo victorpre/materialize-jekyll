@@ -1,0 +1,70 @@
+---
+---
+
+@import "navbar";
+@import "syntax";
+@import "cards";
+@import "tags";
+@import "author";
+@import "post";
+
+
+.adjust-index{
+  z-index:0 !important;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .post-title {
+    font-size: 35px;
+  }
+
+  .author-img {
+    width: 50%;
+    padding-bottom: 5px;
+  }
+
+  .author-info {
+    margin-top: -25px !important;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width : 1250px ){
+    .blog-posts {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width : 768px ){
+    .container-main {
+        width: 98%;
+    }
+}
+
+footer.page-footer {
+  margin: 0;
+}
+

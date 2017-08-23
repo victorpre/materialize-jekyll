@@ -1,0 +1,33 @@
+.card {
+    .card-title {
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .hoverable {
+        overflow: hidden;
+    }
+
+    .hoverable:hover .card-image img {
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+
+    .card-image img {
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
+    }
+
+    .nested-btn {
+        width: 36px;
+        height: 22px;
+        margin-top: 8px;
+    }
+
+    .post-description {
+        color: rgba(0, 0, 0, 0.87) !important;
+    }
+
+    a.post-link {
+        text-decoration: none;
+    }
+}

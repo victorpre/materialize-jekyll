@@ -1,0 +1,38 @@
+# Site settings
+title: Your blog title
+name: Your name
+description: Your blog description
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "http://www.example.com" # the base hostname & protocol for your site e.g. http://materializeblog.com
+
+# User settings
+profile_img_url: http://materializecss.com/res/materialize.svg
+username: username
+user_description: Engenheiro de software, apaixonado por desafios, tecnologia, pessoas & melhoramento pessoal.
+email: username@gmail.com
+github_username:  username
+fb_username: username
+twitter_username: username
+instagram_username: username
+linkedin_username: username
+disqus_username: username
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+# sass
+sass:
+  sass_dir: '_sass'
+  style: compressed
+
+#links
+links:
+  - title: Home
+    url: "http://example.com"
+    external: true
+  - title: Blog
+    url: /
+  - title: Tags
+    url: /tags

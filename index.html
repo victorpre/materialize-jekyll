@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+  <div class="col s12 m6 l4">
+    <div class="card hoverable">
+    {% if post.image  %}
+      <div class="card-image">
+        <img src="{{ post.image }}">
+      </div>
+
+      <div class="btn-menu" style="padding:0px">
+        <div class="fixed-action-btn horizontal click-to-toggle" style="position:relative; float:right; bottom:30px; right:10px; z-index: 1">
+          <a class="btn-floating btn-large teal lighten-1 z-depth-4 waves-effect waves-light">
+            <i class="large material-icons btn-icon">share</i>
+          </a>
+          <ul>
+            <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl  }}{{ post.url }}" class="btn-floating fb-color" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" title="Compartilhar no Facebook">
+                <div class="fb-btn nested-btn valign-wrapper btn-white" >
+                </div>
+            </a></li>
+            <li><a href="https://twitter.com/intent/tweet?text=&quot;{{ post.twitter_text }}&quot;%20{{ site.url }}{{ post.url }}%20via%20&#64;{{ site.twitter_username }}&hashtags={% for tag in post.tags %}{{tag}},{% endfor %}" class="btn-floating twitter-color" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Compartilhar no Twitter">
+                <div class="twitter-btn nested-btn btn-white">
+                </div>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    {% else  %}
+
+
+    {% endif %}
+    <div class="card-content">
+      <span class="grey-text text-lighten-1">{% include date.html date=post.date %}</span>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span class="flow-text card-title"><b>{{ post.title }}</b></span></a>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <p class="post-description">{{ post.introduction }}</p>
+      </a>
+      <br>
+      <div class="tags">
+        {% for tag in post.tags  %}
+          <a href="{{site.baseurl}}/tags/#{{tag | slugify }}"><div class="chip"><b>{{ tag }}</b></div></a>
+        {% endfor  %}
+      </div>
+    </div>
+    <div class="card-action">
+      <div class="center-align">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="brown-text text-lighten-1">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
