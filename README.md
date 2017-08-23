@@ -1,8 +1,8 @@
 # materialize-jekyll
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+![Materialize meets Jekyll](http://res.cloudinary.com/victorpre/image/upload/v1503466230/Gem%20materialize-jekyll/materialize-jekyll.png)
 
-TODO: Delete this and the text above, and describe your gem
+Welcome to your materialize-jekyll theme! In this repo, you'll find the files you need to use [Materializecss](http://materializecss.com/) in your [Jekyll page](https://jekyllrb.com/). Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
 ## Installation
 
@@ -28,11 +28,42 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+Open `_config.yml` file and edit it adding your personal information to it.
+
+### Project tree:
+```
+materialize-jekyll    
+│
+└─── _includes
+│   
+└─── _layouts
+│
+└─── _posts
+│
+└─── _sass
+│
+└─── assets
+     │
+     └─── css
+     │
+     └─── img
+     │
+     └─── js
+```
+
+This gem offers two main layouts that you can use/edit:
+- `_layouts/default` used in the `index.html` page (your blog homepage)
+- `_layouts/post` which is the blog post itself
+
+Inside the `_includes/` directory there are some partials that are/can be used inside your layouts and pages. By default the  `_includes/share.html`, `_includes/author.html`, `_includes/comments.html` are only being used inside the post layout, while the others are shared between both pages.
+
+The CSS of this gem can be edited both in `_sass/` and in `assets/css/main.scss`
+
+Your blog posts should be put in the `_posts` directory.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/victorpre/materialize-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
