@@ -34,21 +34,37 @@ Open `_config.yml` file and edit it adding your personal information to it.
 ```
 materialize-jekyll    
 │
-└─── _includes
-│   
-└─── _layouts
+├─── _includes   
+|      ├─── author.html
+|      ├─── comments.html
+|      ├─── date.html
+|      ├─── footer.html
+|      ├─── header.html
+|      ├─── navbar.html
+│      └─── share.html
+├─── _layouts
+│      ├─── compress.html
+│      ├─── default.html
+│      ├─── page.html
+│      └─── post.html
+├─── _posts
 │
-└─── _posts
-│
-└─── _sass
-│
+├─── _sass
+│      ├─── _author.scss
+│      ├─── _cards.scss
+│      ├─── _navbar.scss
+│      ├─── _post.scss
+│      ├─── _syntax.scss
+│      └─── _tags.html
 └─── assets
      │
      └─── css
-     │
+     │    └─── main.scss
      └─── img
-     │
+     │    └─── icons
      └─── js
+          ├─── init.js
+          └─── vendor
 ```
 
 This gem offers two main layouts that you can use/edit:
