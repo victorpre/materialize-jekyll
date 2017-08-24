@@ -33,13 +33,13 @@ Or install it yourself as:
 materialize-jekyll    
 │
 ├─── _includes   
-|      ├─── author.html
-|      ├─── comments.html
-|      ├─── date.html
-|      ├─── footer.html
-|      ├─── header.html
-|      ├─── navbar.html
-│      └─── share.html
+|      ├─── _author.html
+|      ├─── _comments.html
+|      ├─── _date.html
+|      ├─── _footer.html
+|      ├─── _header.html
+|      ├─── _navbar.html
+│      └─── _share.html
 ├─── _layouts
 │      ├─── compress.html
 │      ├─── default.html
