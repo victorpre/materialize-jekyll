@@ -1,8 +1,8 @@
 # materialize-jekyll
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+![Materialize meets Jekyll](http://res.cloudinary.com/victorpre/image/upload/v1503466230/Gem%20materialize-jekyll/materialize-jekyll.png)
 
-TODO: Delete this and the text above, and describe your gem
+Welcome to your **materialize-jekyll** theme! This is where [Materialize](http://materializecss.com/) meets [Jekyll](https://jekyllrb.com/).
 
 ## Installation
 
@@ -28,11 +28,73 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+### Project tree:
+```
+materialize-jekyll    
+│
+├─── _includes   
+|      ├─── _author.html
+|      ├─── _comments.html
+|      ├─── _date.html
+|      ├─── _footer.html
+|      ├─── _header.html
+|      ├─── _navbar.html
+│      └─── _share.html
+├─── _layouts
+│      ├─── compress.html
+│      ├─── default.html
+│      ├─── page.html
+│      └─── post.html
+├─── _posts
+│
+├─── _sass
+│      ├─── _author.scss
+│      ├─── _cards.scss
+│      ├─── _navbar.scss
+│      ├─── _post.scss
+│      ├─── _syntax.scss
+│      └─── _tags.html
+└─── assets
+     │
+     └─── css
+     │    └─── main.scss
+     └─── img
+     │    └─── icons
+     └─── js
+          ├─── init.js
+          └─── vendor
+```
+
+Inside the `_includes/` directory there are the partials that are used inside your layouts and pages.
+By default, the layouts render the following partials inside themselves:
+
+- `_layouts/default.html`
+    - `_includes/header.html`, 
+    - `_includes/navbar.html`,
+    - `_includes/footer.html`
+- `_layouts/post.html`
+    - `_includes/header.html`, 
+    - `_includes/navbar.html`,
+    - `_includes/share.html`,
+    - `_includes/author.html`,
+    - `_includes/comments.html`
+    - `_includes/footer.html`
+
+
+This gem offers two *main* layouts that you can use/edit:
+- `_layouts/default.html`, which is used in the `index.html` page (your blog homepage),
+- `_layouts/post.html`, which is the layout in which the blog post itself will be rendered
+
+
+The stylesheets of this gem can be edited both in `_sass/` and in `assets/css/main.scss`.
+
+To edit the current JavaScript functions of the gem, the file you are looking for is in `assets/js/init.js`.
+
+Your blog posts (`*.md` files) should be put in the `_posts` directory.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/victorpre/materialize-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -41,6 +103,10 @@ To set up your environment to develop this theme, run `bundle install`.
 Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
 When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
+
+## Credits
+
+This theme was inspired by the [Google's Material Design](https://material.io/guidelines/#introduction-goals), using the components from [Materialize](https://github.com/Dogfalo/materialize) framework and it has a lot of influence from [Willian Justen's Card Jekyll Template](https://github.com/willianjusten/cards-jekyll-template).
 
 ## License
 
