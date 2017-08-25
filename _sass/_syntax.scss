@@ -203,19 +203,18 @@
   color: #f92672;
 }
 .highlight {
-  width: 100vw;
-  padding: 10px;
+  width: 150%;
+  padding: 10px 20px 10px 100px;
   position: relative;
   left: -20%;
   right: 0%;
-  margin-right: -50vw;
+  margin: 0 auto;
   color: #f8f8f2;
   background-color: #222;
 }
 
 @media only screen and (max-width : 600px) {
-  .highlight {
-    left: calc(28% - 42vw);
+  table.highlight {
   }
 }
 .highlighter-rouge{

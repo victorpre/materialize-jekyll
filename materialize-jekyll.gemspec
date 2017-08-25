@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "materialize-jekyll"
-  spec.version       = "0.4.1"
+  spec.version       = "0.5"
   spec.authors       = ["Victor Presumido"]
   spec.email         = ["victor.presumido@gmail.com"]
 
