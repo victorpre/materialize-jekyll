@@ -17,3 +17,10 @@
   font-weight: bold;
   letter-spacing: 1px;
 }
+
+
+@media only screen and (max-width : 537px) {
+  .brand-logo{
+    width: 65%;
+  }
+}
