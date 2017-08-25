@@ -22,6 +22,10 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
+# Gems
+gems:
+    - jemoji
+
 # sass
 sass:
   sass_dir: '_sass'
