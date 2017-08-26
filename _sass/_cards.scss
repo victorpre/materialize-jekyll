@@ -1,39 +1,36 @@
-    .card-title {
-        color: rgba(0, 0, 0, 0.87);
-    }
+.card-title {
+  color: rgba(0, 0, 0, 0.87);
+}
 
-    .hoverable {
-        overflow: hidden;
-    }
+.hoverable {
+  overflow: hidden;
+}
 
-    .hoverable:hover {
-      transition: box-shadow .25s;
-      box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0);
-    }
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0);
+}
 
-    .hoverable:hover .card-image img {
-        -webkit-transform: scale(1.08);
-        transform: scale(1.08);
-    }
+.hoverable:hover .card-image img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
 
-    .card-image img {
-        -webkit-transition: 0.4s ease;
-        transition: 0.4s ease;
-    }
+.card-image img {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
 
-    .nested-btn {
-        width: 36px !important;
-        height: 22px !important;
-        margin-top: 8px;
-    }
+.nested-btn {
+  width: 36px !important;
+  height: 22px !important;
+  margin-top: 8px;
+}
 
-    .post-description {
-        color: rgba(0, 0, 0, 0.87) !important;
-    }
+.post-description {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
 
-    a.post-link {
-        text-decoration: none;
-    }
-  .hidden-card {
-    display: none;
-  }
+a.post-link {
+  text-decoration: none;
+}
