@@ -38,6 +38,9 @@
   color: #26a69a;
   background: white;
   border: #26a69a solid 1px;
+  transition: background-color 0.4s ease;
+  transition: border-color 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .chip:hover {
@@ -46,3 +49,8 @@
   border: #e4e4e4 solid 1px;
 }
 
+.chip.active {
+  background: #26a69a;
+  color: #fff;
+  border: #e4e4e4 solid 1px;
+}
