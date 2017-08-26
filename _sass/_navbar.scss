@@ -2,8 +2,14 @@
   z-index: 150;
   background-color: $mainColor;
 
-  li {
+  li a {
     color: $lighterMainColor;
+  }
+
+  #nav-mobile {
+    a {
+      color: #000;
+    }
   }
 }
 

@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "variables";
 @import "navbar";
 @import "syntax";
 @import "cards";
@@ -29,9 +30,7 @@ p {
 	font-weight: 300;
 }
 
-.button-collapse {
-  color: #26a69a;
-}
+
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -78,5 +77,14 @@ p {
 footer.page-footer {
   margin: 0;
   padding-top: 0px;
+  background-color: $mainColor;
+
+  .footer-copyright {
+    background-color: $mainColor;
+  }
+
+  .container {
+    color: $lighterMainColor;
+  }
 }
 

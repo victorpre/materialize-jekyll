@@ -1,15 +1,15 @@
 
 <div class="navbar-fixed">
   <nav class="z-depth-5" role="navigation">
-    <div class="nav-wrapper main-nav brown lighten-1">
+    <div class="nav-wrapper main-nav">
       <a href="#" class="brand-logo">&lt;/&gt; {{ site.username  }}</a>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons brown-text text-lighten-4">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
 				{% for link in site.links %}
           {% if link.external %}
-            <li><a class="brown-text text-lighten-4" href="{{ link.url }}">{{ link.title }}</a></li>
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
           {% else %}
-            <li><a class="brown-text text-lighten-4" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+            <li><a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
           {% endif  %}
         {% endfor %}
       </ul>
