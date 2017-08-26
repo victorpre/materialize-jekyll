@@ -7,7 +7,7 @@ layout: default
     <div class="container blog-posts">
       <div id="masonry-grid" class="row">
         {% for post in site.posts %}
-          <div class="col s12 m6 l4">
+          <div class="col s12 m6 l4 card-wrapper">
             <div class="card hoverable">
               {% if post.image  %}
                 <div class="card-image">
@@ -44,7 +44,7 @@ layout: default
                 <br>
                 <div class="tags">
                   {% for tag in post.tags  %}
-                    <a href="{{site.baseurl}}/tags/#{{tag | slugify }}"><div class="chip"><b>{{ tag }}</b></div></a>
+                    <a class="tag-name" href="#" data-tag="{{tag | slugify }}"><div class="chip"><b>{{ tag }}</b></div></a>
                   {% endfor  %}
                 </div>
               </div>
