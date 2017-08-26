@@ -204,9 +204,9 @@
 }
 .highlight {
   width: 150%;
-  padding: 10px 20px 10px 100px;
+  padding: 10px 20px 10px 140px;
   position: relative;
-  left: -20%;
+  left: -12%;
   right: 0%;
   margin: 0 auto;
   color: #f8f8f2;
@@ -214,7 +214,9 @@
 }
 
 @media only screen and (max-width : 600px) {
-  table.highlight {
+  .highlight{
+    padding: 10px 20px 10px 35px;
+    left: -14%;
   }
 }
 .highlighter-rouge{
