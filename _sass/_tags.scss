@@ -12,7 +12,7 @@
   li {
     transition: 0.4s ease;
     margin-bottom: 50px;
-    border-bottom: 1px solid #d7ccc8;
+    border-bottom: 1px solid $lighterMainColor;
     line-height: 50px;
   }
 
@@ -22,7 +22,7 @@
 
   .post-title {
     font-size: 20px;
-    color: #d7ccc8;
+    color: $lighterMainColor;
     font-weight: 300;
     border-bottom: 5px;
     .entry-date{
@@ -35,14 +35,22 @@
 }
 
 .chip {
-  color: #26a69a;
+  color: $secondaryColor;
   background: white;
-  border: #26a69a solid 1px;
+  border: $secondaryColor solid 1px;
+  transition: background-color 0.4s ease;
+  transition: border-color 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .chip:hover {
-  background: #26a69a;
+  background: $secondaryColor;
   color: #fff;
   border: #e4e4e4 solid 1px;
 }
 
+.chip.active {
+  background: $secondaryColor;
+  color: #fff;
+  border: #e4e4e4 solid 1px;
+}

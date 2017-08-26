@@ -1,5 +1,16 @@
 .nav-wrapper {
   z-index: 150;
+  background-color: $mainColor;
+
+  li a {
+    color: $lighterMainColor;
+  }
+
+  #nav-mobile {
+    a {
+      color: #000;
+    }
+  }
 }
 
 .main-nav {
@@ -18,6 +29,9 @@
   letter-spacing: 1px;
 }
 
+.button-collapse {
+  color: $lighterMainColor;
+}
 
 @media only screen and (max-width : 537px) {
   .brand-logo{
