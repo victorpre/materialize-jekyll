@@ -1,11 +1,29 @@
  .author-img-wrapper {
-  margin-top: 50px;
+  margin: 25px 0;
  }
 
 .author-img {
-    width: 75%;
+    width: 55%;
     display: block;
     margin: 0 auto;
+}
+
+@media only screen and (max-width : 1600px) {
+  .author-img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width : 1300px) {
+  .author-img {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width : 900px) {
+  .author-img {
+    width: 100%;
+  }
 }
 
 .author-info {
