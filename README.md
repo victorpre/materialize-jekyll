@@ -26,6 +26,10 @@ Or install it yourself as:
 
     $ gem install materialize-jekyll
 
+
+> **Note**: if you are hosting your site with [GitHub Pages](https://pages.github.com/) you will have to clone this project and copy the theme files manually to your directory.
+
+
 ## Usage
 
 ### Project tree:
@@ -33,17 +37,17 @@ Or install it yourself as:
 materialize-jekyll    
 │
 ├─── _includes   
-|      ├─── _author.html
-|      ├─── _comments.html
-|      ├─── _date.html
-|      ├─── _footer.html
-|      ├─── _header.html
-|      ├─── _navbar.html
-│      └─── _share.html
+|      ├─── author.html
+|      ├─── comments.html
+|      ├─── date.html
+|      ├─── footer.html
+|      ├─── header.html
+|      ├─── navbar.html
+│      └─── share.html
 ├─── _layouts
 │      ├─── compress.html
 │      ├─── default.html
-│      ├─── page.html
+│      ├─── home.html
 │      └─── post.html
 ├─── _posts
 │
@@ -53,7 +57,8 @@ materialize-jekyll
 │      ├─── _navbar.scss
 │      ├─── _post.scss
 │      ├─── _syntax.scss
-│      └─── _tags.html
+│      ├─── _tags.scss
+│      └─── _variables.html
 └─── assets
      │
      └─── css
@@ -65,28 +70,15 @@ materialize-jekyll
           └─── vendor
 ```
 
-Inside the `_includes/` directory there are the partials that are used inside your layouts and pages.
-By default, the layouts render the following partials inside themselves:
+This gem offers some *main* layouts that can be used/edited:
+- The `_layouts/default.html`, is the skeleton of the pages, where header,footer, assets are called. It should be used in most of the other layouts,
+- The `_layouts/home.html` is the main layout the will be your home, where your blog posts will be shown;
+- The `_layouts/post.html` is the layout used to present the blog posts themselves, where they will be rendered.
 
-- `_layouts/default.html`
-    - `_includes/header.html`, 
-    - `_includes/navbar.html`,
-    - `_includes/footer.html`
-- `_layouts/post.html`
-    - `_includes/header.html`, 
-    - `_includes/navbar.html`,
-    - `_includes/share.html`,
-    - `_includes/author.html`,
-    - `_includes/comments.html`
-    - `_includes/footer.html`
-
-
-This gem offers two *main* layouts that you can use/edit:
-- `_layouts/default.html`, which is used in the `index.html` page (your blog homepage),
-- `_layouts/post.html`, which is the layout in which the blog post itself will be rendered
-
+Inside the `_includes/` directory there are the partials that are used inside the layouts.
 
 The stylesheets of this gem can be edited both in `_sass/` and in `assets/css/main.scss`.
+The main colors of the theme can be found and customized in `_sass/variables.scss`.
 
 To edit the current JavaScript functions of the gem, the file you are looking for is in `assets/js/init.js`.
 
