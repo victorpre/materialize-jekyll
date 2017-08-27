@@ -4,6 +4,7 @@ name: Your name
 description: Your blog description
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://www.example.com" # the base hostname & protocol for your site e.g. http://materializeblog.com
+google_analytics: ""
 
 # User settings
 profile_img_url: http://materializecss.com/res/materialize.svg
