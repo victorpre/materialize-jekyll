@@ -4,6 +4,8 @@
 
 Welcome to your **materialize-jekyll** theme! This is where [Materialize](http://materializecss.com/) meets [Jekyll](https://jekyllrb.com/).
 
+Demo available: [here](http://victorpre.com/blog/)
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
