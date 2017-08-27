@@ -19,6 +19,7 @@
   position: relative;
   display: inline-block;
   padding: 50px 0 0 0;
+  max-width: 100%;
 }
 
 .post > .row {
@@ -31,4 +32,11 @@
 
 section {
   margin-top: 25px;
+}
+
+.blog-post-img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
