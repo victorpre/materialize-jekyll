@@ -31,8 +31,9 @@
           return $("[data-tag="+tag+"]", this).size();
         });
       }
-      $cards.toggle();
-      $container.masonry('layout').masonry();
+      $cards.fadeToggle("800", "jswing", function(){
+        $container.masonry('layout').masonry();
+      });
     });
 
     // Scroll Reveal
