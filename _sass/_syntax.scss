@@ -204,20 +204,41 @@
 }
 .highlight {
   width: 150%;
-  padding: 10px 20px 10px 140px;
+  padding: 10px 100px 10px 140px;
   position: relative;
   left: -12%;
   right: 0%;
   margin: 0 auto;
   color: #f8f8f2;
   background-color: #222;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media only screen and (max-width : 600px) {
   .highlight{
-    padding: 10px 20px 10px 35px;
+    padding: 10px 100px 10px 35px;
     left: -14%;
   }
+}
+
+@media only screen and (max-width : 1200px) {
+  .highlight{
+    padding: 10px 100px 10px 20px;
+    left: -14%;
+  }
+}
+
+
+.highlight pre {
+    flex: 0 0 auto;
+}
+code span {
+  display: inline-block;
+  flex: 0 0 auto;
+
 }
 .highlighter-rouge{
   background-color: #eee;
