@@ -9,7 +9,7 @@ google_analytics: ""
 # User settings
 profile_img_url: http://materializecss.com/res/materialize.svg
 username: username
-user_description: Engenheiro de software, apaixonado por desafios, tecnologia, pessoas & melhoramento pessoal.
+user_description: Write here a brief description about you.
 email: username@gmail.com
 github_username:  username
 fb_username: username
@@ -23,8 +23,8 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:title/
 
-# Gems
-gems:
+# Plugins
+plugins:
     - jemoji
 
 # sass
