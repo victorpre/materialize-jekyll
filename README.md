@@ -29,7 +29,8 @@ Or install it yourself as:
     $ gem install materialize-jekyll
 
 
-> **Note**: if you are hosting your site with [GitHub Pages](https://pages.github.com/) you will have to clone this project and copy the theme files manually to your directory.
+> **Note**: ~~if you are hosting your site with [GitHub Pages](https://pages.github.com/) you will have to clone this project and copy the theme files manually to your directory.~~
+> Since [November 2017](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) you can use this theme by adding: `remote_theme: victorpre/materialize-jekyll` on your `_config.yml` file.
 
 
 ## Usage
