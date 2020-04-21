@@ -25,7 +25,7 @@ permalink: /:title/
 
 # Plugins
 plugins:
-    - jemoji
+  - jemoji
 
 # sass
 sass:
