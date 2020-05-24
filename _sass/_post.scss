@@ -1,5 +1,5 @@
 .main-top {
-  background-color: $lighterMainColor;
+  background-color: var(--ligther-main-color);
   height: 200px;
   float: left;
   width: 100%;
@@ -8,7 +8,7 @@
 }
 
 .content {
-  background-color: #fff;
+  background-color: var(--card-color);
   box-shadow: 5px 10px 15px 5px rgba(0, 0, 0, 0.26);
   border-radius: 2px;
   overflow: hidden;
@@ -20,6 +20,7 @@
   display: inline-block;
   padding: 50px 0 0 0;
   max-width: 100%;
+  color: var(--main-text-color);
 }
 
 .post > .row {
@@ -46,6 +47,10 @@ section {
   .blog-post-img img {
     width: 100%;
   }
+
+  .post-specs {
+    font-size: .8em;
+  }
 }
 
 .browser-default > li {
@@ -53,4 +58,11 @@ section {
 	line-height: 2.0rem;
 	font-size: 1.25rem;
 	letter-spacing: 0.1rem;
+}
+
+.material-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }

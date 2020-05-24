@@ -21,19 +21,13 @@
   transition: 0.4s ease;
 }
 
-.btm-menu {
   .btn-floating {
-    background-color: $secondaryColor;
+    background-color: var(--secondary-color);
   }
-}
 .nested-btn {
   width: 36px !important;
   height: 22px !important;
   margin-top: 8px;
-}
-
-.post-description {
-  color: rgba(0, 0, 0, 0.87) !important;
 }
 
 .read-more {
@@ -42,4 +36,16 @@
 
 a.post-link {
   text-decoration: none;
+}
+
+.card-content {
+  background-color: var(--card-color);
+
+  .card-title {
+    color: var(--main-text-color);
+  }
+
+  .post-description {
+    color: var(--main-text-color) !important;
+  }
 }

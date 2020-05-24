@@ -1,14 +1,15 @@
 .nav-wrapper {
   z-index: 150;
-  background-color: $mainColor;
+  background-color: var(--main-color);
 
   li a {
-    color: $lighterMainColor;
+    color: var(--ligther-main-color);
   }
 
   #nav-mobile {
+    background-color: var(--main-background-color);
     a {
-      color: #000;
+      color: var(--text-color);
     }
   }
 }
@@ -30,7 +31,7 @@
 }
 
 .button-collapse {
-  color: $lighterMainColor;
+  color: var(--ligther-main-color);
 }
 
 @media only screen and (max-width : 537px) {

@@ -12,7 +12,7 @@
   li {
     transition: 0.4s ease;
     margin-bottom: 50px;
-    border-bottom: 1px solid $lighterMainColor;
+    border-bottom: 1px solid var(--ligther-main-color);
     line-height: 50px;
   }
 
@@ -22,7 +22,7 @@
 
   .post-title {
     font-size: 20px;
-    color: $lighterMainColor;
+    color: var(--ligther-main-color);
     font-weight: 300;
     border-bottom: 5px;
     .entry-date{
@@ -35,22 +35,22 @@
 }
 
 .chip {
-  color: $secondaryColor;
-  background: white;
-  border: $secondaryColor solid 1px;
+  color: var(--secondary-color);
+  background-color: var(--card-color);
+  border: var(--secondary-color) solid 1px;
   transition: background-color 0.4s ease;
   transition: border-color 0.4s ease;
   transition: color 0.4s ease;
 }
 
 .chip:hover {
-  background: $secondaryColor;
+  background: var(--secondary-color);
   color: #fff;
   border: #e4e4e4 solid 1px;
 }
 
 .chip.active {
-  background: $secondaryColor;
+  background: var(--secondary-color);
   color: #fff;
   border: #e4e4e4 solid 1px;
 }

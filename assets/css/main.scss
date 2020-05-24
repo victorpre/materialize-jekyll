@@ -10,9 +10,41 @@
 @import "post";
 
 body {
+  background-color: var(--main-background-color);
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  .highlighter-rouge {
+    color: #000;
+  }
+}
+
+nav {
+  background-color: var(--main-color);
+}
+
+#theme-toggle {
+  &.dark {
+    background-color: var(--text-color);
+    mask: url(../img/icons/sun.svg)  no-repeat;
+    -webkit-mask: url(../img/icons/sun.svg)  no-repeat;
+  }
+  &.light {
+    background-color: #757575;
+    mask: url(../img/icons/moon.svg)  no-repeat;
+    -webkit-mask: url(../img/icons/moon.svg)  no-repeat;
+  }
+  right: 30px;
+  top: 75px;
+  position: absolute;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
 main {
@@ -60,6 +92,11 @@ p {
   .author-info {
     text-align: center;
   }
+
+  #theme-toggle {
+    top: 12px;
+    z-index: 1000;
+  }
 }
 
 @media screen and (max-width : 1250px ){
@@ -72,19 +109,89 @@ p {
     .container-main {
         width: 98%;
     }
+
+    #top-bar {
+      padding-top: 0px;
+      height: 150px;
+    }
+
+    #theme-toggle {
+      position: fixed;
+      top: 16px;
+      z-index: 1000;
+    }
+}
+
+@media screen and (max-width : 425px ){
+    #theme-toggle {
+      top: 12px;
+    }
 }
 
 footer.page-footer {
   margin: 0;
   padding-top: 0px;
-  background-color: $mainColor;
+  background-color: var(--main-color);
 
   .footer-copyright {
-    background-color: $mainColor;
+    background-color: var(--main-color);
   }
 
   .container {
-    color: $lighterMainColor;
+    color: var(--ligther-main-color);
   }
 }
 
+html, html[data-theme="light"] {
+  --text-color: #{$textColor};
+  --main-color: #{$mainColor};
+  --card-color: #{$cardColor};
+  --main-background-color: #{$background};
+  --light-main-color: #{$lightMainColor};
+  --ligther-main-color: #{$lighterMainColor};
+  --main-text-color: #{$textColor};
+  --secondary-color: #{$secondaryColor};
+}
+
+html[data-theme="dark"] {
+  --text-color: #{$darkTextColor};
+  --main-color: #{$darkMainColor};
+  --card-color: #{$darkCardColor};
+  --main-background-color: #{$darkBackground};
+  --light-main-color: #{$darkLightMainColor};
+  --ligther-main-color: #{$darkLighterMainColor};
+  --main-text-color: #{$darkTextColor};
+  --secondary-color: #{$darkSecondaryColor};
+}
+
+@media (prefers-color-scheme: dark) {
+  html, html[data-theme="dark"] {
+    --text-color: #{$darkTextColor};
+    --main-color: #{$darkMainColor};
+    --card-color: #{$darkCardColor};
+    --main-background-color: #{$darkBackground};
+    --light-main-color: #{$darkLightMainColor};
+    --ligther-main-color: #{$darkLighterMainColor};
+    --main-text-color: #{$darkTextColor};
+    --secondary-color: #{$darkSecondaryColor};
+  }
+
+  html[data-theme="light"] {
+    --text-color: #{$textColor};
+    --main-color: #{$mainColor};
+    --card-color: #{$cardColor};
+    --main-background-color: #{$background};
+    --light-main-color: #{$lightMainColor};
+    --ligther-main-color: #{$lighterMainColor};
+    --main-text-color: #{$textColor};
+    --secondary-color: #{$secondaryColor};
+  }
+}
+
+html,
+html *,
+html *:before,
+html *:after {
+  transition: color 1s !important;
+  transition: background-color 1s !important;
+}
