@@ -2,40 +2,55 @@
   color: rgba(0, 0, 0, 0.87);
 }
 
-.hoverable {
-  overflow: hidden;
-}
+.card-hoverable {
+  position: relative; /* For positioning the pseudo-element */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 
-.hoverable:hover {
-  transition: box-shadow .25s;
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 0 0 0 rgba(0, 0, 0, 0);
-}
-
-.hoverable:hover .card-image img {
-  -webkit-transform: scale(1.08);
-  transform: scale(1.08);
-}
-
-.card-image img {
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
-}
-
-  .btn-floating {
-    background-color: var(--secondary-color);
+  .post-link-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
+}
+
+.card-hoverable::before {
+  /* Position the pseudo-element. */
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Create the box shadow at expanded size. */
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.5);
+
+  /* Hidden by default. */
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.card-hoverable:hover::before {
+  /* Show the pseudo-element on hover. */
+  cursor: pointer;
+  opacity: 1;
+}
+
+.btn-floating {
+  background-color: var(--secondary-color);
+}
+
 .nested-btn {
   width: 36px !important;
   height: 22px !important;
   margin-top: 8px;
 }
 
-.read-more {
-  color: $mainColor !important;
-}
-
 a.post-link {
   text-decoration: none;
+  position: relative;
 }
 
 .card-content {

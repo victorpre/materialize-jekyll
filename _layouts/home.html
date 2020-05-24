@@ -8,11 +8,13 @@ layout: default
       <div id="masonry-grid" class="row">
         {% for post in site.posts %}
           <div class="col s12 m6 l4 card-wrapper">
-            <div class="card hoverable">
+            <div class="card card-hoverable">
               {% if post.image  %}
-                <div class="card-image">
-                  <img src="{{ post.image }}">
-                </div>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                  <div class="card-image">
+                    <img src="{{ post.image }}">
+                  </div>
+                </a>
 
                 <div class="btn-menu" style="padding:0px">
                   <div class="fixed-action-btn horizontal click-to-toggle" style="position:relative; float:right; bottom:30px; right:10px; z-index: 1">
@@ -36,10 +38,12 @@ layout: default
 
               {% endif %}
               <div class="card-content">
-                <span class="grey-text text-lighten-1">{% include date.html date=post.date %}</span>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span class="flow-text card-title"><b>{{ post.title }}</b></span></a>
                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                  <p class="post-description">{{ post.description }}</p>
+                  <div>
+                    <span class="grey-text text-lighten-1">{% include date.html date=post.date %}</span>
+                    <span class="flow-text card-title"><b>{{ post.title }}</b></span>
+                    <p class="post-description">{{ post.description }}</p>
+                  </div>
                 </a>
                 <br>
                 <div class="tags">
