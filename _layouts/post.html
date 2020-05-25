@@ -12,7 +12,7 @@ layout: default
           <h2 class="post-title col s12 center-align">{{ page.title }}</h2>
           <div class="col s12">
             <div class="grey-text text-lighten-1 center-align valign post-specs">
-              <i class="material-icons">today </i> {% include date.html date=page.date %}  &nbsp; — &nbsp;<i class="material-icons">access_time </i> {{ minutesText }}
+              <i class="material-icons">today </i> {% include date.html date=page.date %}  &nbsp; — &nbsp;<i class="material-icons">access_time </i> {{ minutesText }} {{ page.reading_time }}
             </div>
           </div>
           <p class="flow-text grey-text text-lighten-1 col s12">{{ page.introduction }}</p>

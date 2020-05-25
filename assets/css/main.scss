@@ -26,15 +26,24 @@ nav {
 
 #theme-toggle {
   &.dark {
-    background-color: var(--text-color);
+    background-color: #fff;
     mask: url(../img/icons/sun.svg)  no-repeat;
     -webkit-mask: url(../img/icons/sun.svg)  no-repeat;
+
+    &:hover {
+      background-color: #212121;
+    }
   }
+
   &.light {
-    background-color: #757575;
+    background-color: #000;
     mask: url(../img/icons/moon.svg)  no-repeat;
     -webkit-mask: url(../img/icons/moon.svg)  no-repeat;
+    &:hover {
+      background-color: #9e9e9e;
+    }
   }
+  cursor: pointer;
   right: 30px;
   top: 75px;
   position: absolute;
@@ -100,9 +109,13 @@ p {
 }
 
 @media screen and (max-width : 1250px ){
-    .blog-posts {
-        width: 98%;
-    }
+  .blog-posts {
+    width: 98%;
+  }
+
+  #theme-toggle {
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width : 768px ){
@@ -192,6 +205,6 @@ html,
 html *,
 html *:before,
 html *:after {
-  transition: color 1s !important;
-  transition: background-color 1s !important;
+  transition: color 1s;
+  transition: background-color 1s;
 }

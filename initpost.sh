@@ -119,6 +119,8 @@ echo "main-class: ''"
 echo "tags:"
 echo "twitter_text:"
 echo "introduction:"
+echo "share_text:"
+echo "reading_time:"
 echo "---"
 
 }
