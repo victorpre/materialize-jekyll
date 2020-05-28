@@ -46,11 +46,6 @@
       $("#sidenav-overlay").addClass("adjust-index");
     }
 
-    $(".button-collapse").sideNav({
-      menuWidth: 1000, // Default is 240
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    });
 
     $('.button-collapse').click(function(){
       adjustIndex();
@@ -61,9 +56,18 @@
       var icon = $(this).find(".btn-floating > i");
       if ($(this).hasClass('active')) {
           icon.text("share");
-      }else{
+      } else{
           icon.text("clear");
       }
     });
   }); // end of document ready
 })(jQuery); // end of jQuery name space
+
+document.addEventListener('DOMContentLoaded', function() {
+  const M = window.M;
+  var elems = document.querySelectorAll('.sidenav');
+  var opts = {
+    edge: 'left' // Choose the horizontal origin
+  };
+  var instances = M.Sidenav.init(elems, opts);
+});
