@@ -1,19 +1,9 @@
 <div class="navbar-fixed">
   <nav class="z-depth-5" role="navigation">
     <div class="nav-wrapper main-nav">
-      <a href="#" class="brand-logo">&lt;/&gt; {{ site.username  }}</a>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo center">&lt;/&gt; {{ site.username  }}</a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-				{% for link in site.links %}
-          {% if link.external %}
-            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-          {% else %}
-            <li><a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endif  %}
-        {% endfor %}
-      </ul>
-
-      <ul class="side-nav" id="nav-mobile" >
 				{% for link in site.links %}
           {% if link.external %}
             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
@@ -25,5 +15,17 @@
     </div>
   </nav>
 </div>
+
+
+<ul class="sidenav" id="nav-mobile" >
+  {% for link in site.links %}
+  {% if link.external %}
+  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+  {% else %}
+  <li><a href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
+  {% endif  %}
+  {% endfor %}
+</ul>
+
 
 <a id="theme-toggle" class="" onclick="modeSwitcher()"></a>
