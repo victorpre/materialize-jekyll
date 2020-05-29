@@ -65,10 +65,10 @@ main {
 }
 
 p {
-	line-height: 2.0rem;
-	font-size: 1.25rem;
-	letter-spacing: 0.1rem;
-	font-weight: 300;
+  line-height: 2.0rem;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
 }
 
 
@@ -119,20 +119,22 @@ p {
 }
 
 @media screen and (max-width : 768px ){
-    .container-main {
-        width: 98%;
-    }
+  .container-main {
+    width: 98%;
+  }
+  .blog-posts {
+    width: 90%;
+  }
+  #top-bar {
+    padding-top: 0px;
+    height: 150px;
+  }
 
-    #top-bar {
-      padding-top: 0px;
-      height: 150px;
-    }
-
-    #theme-toggle {
-      position: fixed;
-      top: 12px;
-      z-index: 1000;
-    }
+  #theme-toggle {
+    position: fixed;
+    top: 12px;
+    z-index: 1000;
+  }
 }
 
 @media screen and (max-width : 425px ){
